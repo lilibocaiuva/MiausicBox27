@@ -1,19 +1,55 @@
-<link rel="stylesheet" href="cadastro.component.css">
-<form (ngSubmit)="signUp()" #cadastroForm="ngForm">
-  <div class="form-group">
-    <label for="nome">Nome</label>
-    <input [(ngModel)]="nome" name="nome" type="text" required placeholder="Digite seu nome">
+<img src="fundo.jpg" alt="fundo miausic" class="fundo-img" />
+
+<div class="login-container">
+
+  <div class="logo">
+    <div class="logo-header">
+      <img src="logocat.png" alt="Miausicbox Logo" class="logo-image" />
+      <h1>Miausicbox</h1>
+    </div>
+    <p>Descubra e avalie música</p>
   </div>
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input [(ngModel)]="email" name="email" type="email" required placeholder="exemplo@email.com">
-  </div>
+  <form (ngSubmit)="cadastrarUser()" #cadastroForm="ngForm">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input
+        [(ngModel)]="nome"
+        name="nome"
+        type="text"
+        required
+        placeholder="Digite seu nome"
+      />
+    </div>
 
-  <div class="form-group">
-    <label for="password">Senha</label>
-    <input [(ngModel)]="password" name="password" type="password" required placeholder="Crie uma senha segura">
-  </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        [(ngModel)]="email"
+        name="email"
+        type="email"
+        required
+        placeholder="Digite seu email"
+      />
+    </div>
 
-  <button type="submit" class="btn-cadastro">Cadastrar</button>
-</form>
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input
+        [(ngModel)]="senha"
+        name="senha"
+        type="password"
+        required
+        placeholder="Digite sua senha"
+      />
+    </div>
+
+    <button type="submit" class="login-btn">
+      Cadastrar
+    </button>
+  </form>
+
+  <div class="signup-link">
+    <p>Já tem conta? <a routerLink="/login">Entrar</a></p>
+  </div>
+</div>

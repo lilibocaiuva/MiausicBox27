@@ -1,10 +1,10 @@
 <div class="app">
-  <!-- HEADER herdado da home -->
+  <!-- HEADER -->
   <header>
     <div class="header_content">
       <div class="logo">
         <svg class="logo-icon" viewBox="0 0 24 24">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
         </svg>
         Miausicbox
       </div>
@@ -23,12 +23,14 @@
     </div>
   </header>
 
+  <!-- DECORAÇÃO -->
   <div class="floating-shapes">
     <div class="shape"></div>
     <div class="shape"></div>
     <div class="shape"></div>
   </div>
 
+  <!-- CONTEÚDO PRINCIPAL -->
   <div class="container">
     <header class="header">
       <h1 class="main-title">Miausicbox</h1>
@@ -36,8 +38,17 @@
     </header>
 
     <div class="playlist-grid">
-      <a href="https://open.spotify.com/playlist/37i9dQZF1EQqkOPvHGajmW?si=JdFCpfFkRrugGqMyFzM8MQ" class="playlist-card" (click)="openSpotify('indie')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 1 -->
+      <a
+        href="https://open.spotify.com/playlist/37i9dQZF1EQqkOPvHGajmW?si=JdFCpfFkRrugGqMyFzM8MQ"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('indie')"
+      >
+        <div class="playlist-icon">
+          <img src="indie.jpg" alt="Indie Vibes" />
+        </div>
         <h3 class="playlist-title">Indie Vibes</h3>
         <p class="playlist-description">Sons alternativos e indie para relaxar e se inspirar.</p>
         <div class="playlist-meta">
@@ -46,8 +57,17 @@
         </div>
       </a>
 
-      <a href="https://open.spotify.com/playlist/6uJ3iSP8QH7zIdGAiJDaaL?si=1ySd1TprQjqsw9hKUShoLQ" class="playlist-card" (click)="openSpotify('pop')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 2 -->
+      <a
+        href="https://open.spotify.com/playlist/6uJ3iSP8QH7zIdGAiJDaaL?si=1ySd1TprQjqsw9hKUShoLQ"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('pop')"
+      >
+        <div class="playlist-icon">
+          <img src="pop.jpg" alt="Pop Hits" />
+        </div>
         <h3 class="playlist-title">Pop Hits</h3>
         <p class="playlist-description">Os maiores sucessos do pop atual. Energia e melodias grudentas.</p>
         <div class="playlist-meta">
@@ -56,8 +76,17 @@
         </div>
       </a>
 
-      <a href="https://open.spotify.com/playlist/3vfuvrPYLGuho9OHMmwCyA?si=R88ZOXBvQGeaSpRIkuVLCw" class="playlist-card" (click)="openSpotify('chill')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 3 -->
+      <a
+        href="https://open.spotify.com/playlist/3vfuvrPYLGuho9OHMmwCyA?si=R88ZOXBvQGeaSpRIkuVLCw"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('chill')"
+      >
+        <div class="playlist-icon">
+          <img src="sunset.jpg" alt="Chill Sunset" />
+        </div>
         <h3 class="playlist-title">Chill Sunset</h3>
         <p class="playlist-description">Músicas suaves para relaxar no final do dia.</p>
         <div class="playlist-meta">
@@ -66,8 +95,17 @@
         </div>
       </a>
 
-      <a href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U?si=pb7xFHbqS5y2TnQtE6N_WA" class="playlist-card" (click)="openSpotify('rock')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 4 -->
+      <a
+        href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U?si=pb7xFHbqS5y2TnQtE6N_WA"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('rock')"
+      >
+        <div class="playlist-icon">
+          <img src="rockclassic.jpg" alt="Rock Classics" />
+        </div>
         <h3 class="playlist-title">Rock Classics</h3>
         <p class="playlist-description">Os clássicos do rock que nunca saem de moda.</p>
         <div class="playlist-meta">
@@ -76,8 +114,17 @@
         </div>
       </a>
 
-      <a href="https://open.spotify.com/playlist/1gzrM0h3VuGRwzomvK23LR?si=iG0WibeVTEKF-iIb3jikFg" class="playlist-card" (click)="openSpotify('electronic')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 5 -->
+      <a
+        href="https://open.spotify.com/playlist/1gzrM0h3VuGRwzomvK23LR?si=iG0WibeVTEKF-iIb3jikFg"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('electronic')"
+      >
+        <div class="playlist-icon">
+          <img src="eletronic.jpg" alt="Electronic Flow" />
+        </div>
         <h3 class="playlist-title">Electronic Flow</h3>
         <p class="playlist-description">Batidas eletrônicas e sintetizadores pra energizar.</p>
         <div class="playlist-meta">
@@ -86,8 +133,17 @@
         </div>
       </a>
 
-      <a href="https://open.spotify.com/intl-pt/album/6hrb42dc20hXIwmoKPR2PE?si=JD3g7CaHTNithsuJ73piGw" class="playlist-card" (click)="openSpotify('acoustic')">
-        <div class="playlist-icon"></div>
+      <!-- Playlist 6 -->
+      <a
+        href="https://open.spotify.com/intl-pt/album/6hrb42dc20hXIwmoKPR2PE?si=JD3g7CaHTNithsuJ73piGw"
+        class="playlist-card"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="openSpotify('acoustic')"
+      >
+        <div class="playlist-icon">
+          <img src="acustic.jpg" alt="Acoustic Sessions" />
+        </div>
         <h3 class="playlist-title">Acoustic Sessions</h3>
         <p class="playlist-description">Versões acústicas para momentos íntimos.</p>
         <div class="playlist-meta">
@@ -96,19 +152,9 @@
         </div>
       </a>
     </div>
-
-    <section class="featured-section">
-      <h2 class="featured-title">Música para Cada Momento</h2>
-      <p class="featured-text">
-        Cada playlist foi cuidadosamente curada para criar a atmosfera perfeita.
-      </p>
-      <a href="https://open.spotify.com/" class="spotify-button" target="_blank">
-        <span>♫</span>
-        Abrir Spotify
-      </a>
-    </section>
   </div>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Miausicbox. Todos os direitos reservados.</p>
   </footer>

@@ -4,17 +4,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif !important;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #fdf7f7 0%, #f8f0f5 100%);
-  min-height: 100vh;
   color: #2d2d2d;
   overflow-x: hidden;
 }
 
-/* ----------- HEADER IGUAL HOME ----------- */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+/* ----------- HEADER ----------- */
 header {
   padding: 2rem 3rem;
   border-bottom: 1px solid #eee;
@@ -84,22 +101,14 @@ header {
   background: #e91e63;
 }
 
-/* ----------- CONTEÚDO ----------- */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  position: relative;
-}
-
+/* ----------- TÍTULOS ----------- */
 .main-title {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
   background: linear-gradient(135deg, #ff69b4, #ff1493);
- -webkit-background-clip: text;
-background-clip: text;
-
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
@@ -110,13 +119,14 @@ background-clip: text;
   font-weight: 300;
 }
 
-/* ----------- PLAYLIST CARDS ----------- */
+/* ----------- PLAYLISTS ----------- */
 .playlist-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
   gap: 2rem;
   margin: 3rem 0;
 }
+
 
 .playlist-card {
   background: #fff;
@@ -127,6 +137,7 @@ background-clip: text;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 105, 180, 0.2);
   box-shadow: 0 8px 16px rgba(255, 105, 180, 0.08);
+  cursor: pointer;
 }
 
 .playlist-card:hover {
@@ -136,17 +147,16 @@ background-clip: text;
 }
 
 .playlist-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.playlist-icon img {
   width: 60px;
   height: 60px;
   border-radius: 15px;
-  background: linear-gradient(135deg, #ff69b4, #ff1493);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
 }
 
 .playlist-title {
@@ -178,50 +188,7 @@ background-clip: text;
   font-weight: 500;
 }
 
-/* ----------- DESTAQUE SPOTIFY ----------- */
-.featured-section {
-  text-align: center;
-  background: #fff0f6;
-  border-radius: 30px;
-  padding: 3rem 2rem;
-  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.1);
-  border: 1px solid rgba(255, 105, 180, 0.15);
-}
-
-.featured-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #e91e63;
-}
-
-.featured-text {
-  font-size: 1.1rem;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.7;
-}
-
-.spotify-button {
-  display: inline-flex;
-  align-items: center;
-  background: #1db954;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.3);
-}
-
-.spotify-button:hover {
-  background: #1ed760;
-  transform: translateY(-2px);
-}
-
-/* ----------- FLOATING SHAPES ----------- */
+/* ----------- SHAPES ----------- */
 .floating-shapes {
   position: fixed;
   top: 0;
@@ -274,6 +241,7 @@ background-clip: text;
 
 /* ----------- FOOTER ----------- */
 footer {
+  width: 100%;
   text-align: center;
   padding: 2rem;
   border-top: 1px solid #eee;
@@ -284,9 +252,12 @@ footer {
 
 /* ----------- RESPONSIVO ----------- */
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 2.2rem;
+  .playlist-grid {
+    grid-template-columns: 1fr; /* 1 por linha no celular */
+    gap: 1.5rem;
   }
+
+
 
   .container {
     padding: 1rem;
@@ -300,18 +271,4 @@ footer {
   .featured-title {
     font-size: 1.8rem;
   }
-}
-footer {
-  text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #eee;
-  color: #999;
-  font-size: 0.85rem;
-  background-color: #FFC0CB;
-}
-* {
-  font-family: 'Inter', sans-serif !important;
-}
-* {
-  font-family: 'Inter', sans-serif !important;
 }
