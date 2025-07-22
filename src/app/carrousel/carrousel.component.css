@@ -1,0 +1,89 @@
+.carrousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.carrousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carrousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 12px;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+}
+
+.card-content h2 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+.card-content h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.card-content button {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.card-content button:hover {
+  background: #f0f0f0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+}
+
+.controls button:hover {
+  background: white;
+}

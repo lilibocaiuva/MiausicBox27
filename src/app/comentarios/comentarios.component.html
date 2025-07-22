@@ -1,0 +1,19 @@
+<div class="comentarios-container">
+  <h3>Comentários</h3>
+
+  <form (submit)="enviarComentario(); $event.preventDefault()" class="form-comentario">
+    <input type="text" placeholder="Seu nome" [(ngModel)]="autor" name="autor" required />
+    <textarea placeholder="Escreva seu comentário" [(ngModel)]="novoComentario" name="comentario" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div *ngIf="comentarios.length === 0" class="sem-comentarios">Seja o primeiro a comentar!</div>
+
+  <ul class="lista-comentarios">
+    <li *ngFor="let c of comentarios">
+      <div class="autor">{{ c.autor }} <span class="data">{{ c.data.toDateString() }}</span></div>
+      <div class="texto">{{ c.texto }}</div>
+    </li>
+  </ul>
+</div>
+

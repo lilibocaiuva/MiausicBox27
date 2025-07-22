@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miausicbox</title>
+  <link rel="stylesheet" href="home.component.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="header_content">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          Miausicbox
+        </div>
+        <nav>
+          <ul class="navegacion">
+            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/explorar" routerLinkActive="active">Explorar</a></li>
+            <li><a routerLink="/dashboard" routerLinkActive="active">Descobrir</a></li>
+            <li><a routerLink="/login" routerLinkActive="active">Perfil</a></li>
+          </ul>
+        </nav>
+        <div class="user-section">
+          <span class="user-name">Olá, usuário</span>
+          <div class="user-avatar"><img src="logocat.png"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Componente Carrossel -->
+    <app-carrousel></app-carrousel>
+
+    <!-- Cards com estrelas -->
+    <main>
+        <section class="albums-section">
+  <h2>Músicas em Destaque</h2>
+  <div class="albums-grid">
+
+    <!-- CARD 1 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/6gJZIzeosk72M3nh5zY0rY?si=2db8bf1f402a4b3e" target="_blank">
+          <img src="mscterno.png" alt="Volta" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">Volta</div>
+        <div class="album-artist">Terno Rei</div>
+        <div class="rating-line">★★★★☆ <span class="heart">♡</span> <span class="date">01 Mar</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/0zLs0xjw4MYcMiXHsOvSgk?si=efe5663a5cd54f7b" target="_blank">
+          <img src="mscpq.png" alt="Preciso dizer que te amo" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">Preciso dizer que te amo</div>
+        <div class="album-artist">Cazuza, Bebel Gilberto</div>
+        <div class="rating-line">★★★★½ <span class="heart">♡</span> <span class="date">12 Jun</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/2YFc0r6PUWDAeE38vJnCxR?si=2036fe529cc24f2b" target="_blank">
+          <img src="mscpeep.png" alt="ghost boy" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">ghost boy</div>
+        <div class="album-artist">Lil Peep</div>
+        <div class="rating-line">★★★★☆ <span class="heart">♡</span> <span class="date">28 Abr</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/3HfEgAaf0koxBpBB8NvGda?si=280b9058703a42b2" target="_blank">
+          <img src="mscvalentine.png" alt="when you sleep" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">when you sleep</div>
+        <div class="album-artist">My Bloody Valentine</div>
+        <div class="rating-line">★★★★★ <span class="heart">♡</span> <span class="date">27 Dez</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/5Qv2Nby1xTr9pQyjkrc94J?si=6e5505ec57544b9b" target="_blank">
+          <img src="mcsradio.png" alt="All I Need" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">All I Need</div>
+        <div class="album-artist">Radiohead</div>
+        <div class="rating-line">★★★★★ <span class="heart">♡</span> <span class="date">28 Dez</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/5dRQUolXAVX3BbCiIxmSsf?si=3f249b9e34ad4d7f" target="_blank">
+          <img src="mscyour.png" alt="Your Love" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">Your Love</div>
+        <div class="album-artist">The Outfield</div>
+        <div class="rating-line">★★★★☆ <span class="heart">♡</span> <span class="date">18 Out</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/0YyZBGbZYAuEFu473MiyjQ?si=0067a58b24454a6c" target="_blank">
+          <img src="mscrecionais.jpg" alt="Jorge de Capadócia" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">Jorge de Capadócia</div>
+        <div class="album-artist">Racionais MC's</div>
+        <div class="rating-line">★★★★☆ <span class="heart">♡</span> <span class="date">27 Jan</span></div>
+      </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="album-card">
+      <div class="album-cover">
+        <a href="https://open.spotify.com/intl-pt/track/36wWhtZyNc7YSGORYvLZ5X?si=13d38ef99cba464e" target="_blank">
+          <img src="mscsentimento.png" alt="Sentimento" />
+        </a>
+      </div>
+      <div class="album-info">
+        <div class="album-title">Sentimento</div>
+        <div class="album-artist">MC Kevin</div>
+        <div class="rating-line">★★★★☆ <span class="heart">♡</span> <span class="date">04 Out</span></div>
+      </div>
+    </div>
+
+  </div> <!-- fim da .albums-grid -->
+</section>
+      
+       <section class="content-grid">
+  <div class="content-box">
+    <h3>Avaliações</h3>
+    <p>Registre suas opiniões sobre os álbuns e músicas que você ouve.</p>
+  </div>
+  
+  <div class="content-box">
+    <h3>Listas</h3>
+    <p>Organize suas descobertas em listas personalizadas.</p>
+  </div>
+  
+  <div class="content-box">
+    <h3>Comunidade</h3>
+    <p>Descubra novos gostos através de outros usuários.</p>
+  </div>
+</section>
+
+    </main>  
+    <footer>
+      <p>© 2025 Miausicbox. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>

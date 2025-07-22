@@ -1,0 +1,215 @@
+<link rel="stylesheet" href="dashboard.component.css">
+<div class="app">
+  <header>
+    <div class="header_content">
+      <div class="logo">Miausicbox</div>
+      <nav>
+        <ul class="navegacion">
+           <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/explorar" routerLinkActive="active">Explorar</a></li>
+          <li><a routerLink="/dashboard" routerLinkActive="active">Descobrir</a></li>
+          <li><a routerLink="/login" routerLinkActive="active">Perfil</a></li>
+        </ul>
+      </nav>
+      <div class="user-section">
+        <div class="user-name">Olá, usuário</div>
+        <div class="user-avatar"><img src="logocat.png"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="page-header">
+      <h1>Escreve tua review</h1>
+      <p>Compartilha tuas impressões sobre esse som!</p>
+    </div>
+
+
+    <div class="review-form-container">
+      <div class="album-info">
+        <div class="album-cover">
+          <img src="clairo.jpg" alt="Capa do álbum">
+        </div>
+        <div class="album-details">
+          <h3>Clairocharm</h3>
+          <p>Clairo • Pop Indie, 2024</p>
+        </div>
+      </div>
+
+
+      <form class="review-form">
+        <div class="rating-section">
+          <label for="rating">Tua nota:</label>
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+          </div>
+        </div>
+
+
+        <div class="comment-section">
+          <label for="comentario">Comentário:</label>
+          <textarea id="comentario" placeholder="Conte-nós o que achou..."></textarea>
+        </div>
+
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Publicar</button>
+          <button type="reset" class="btn-secondary">Cancelar</button>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="reviews-list">
+      <h2>🐾 Reviews dos usuários</h2>
+
+
+      <div class="review-item">
+        <div class="review-header">
+          <div class="user-info">
+            <div class="user-avatar small"><img src="logocat.png"></div>
+            <div>
+              <span class="username">Cleopatra </span>
+              <span class="review-date"> há 2 horas</span>
+            </div>
+          </div>
+          <div class="review-rating">
+            <span class="stars">★★★★☆</span>
+          </div>
+        </div>
+
+
+        <div class="music-info">
+          <img src="clairo.jpg" alt="Capa">
+          <div>
+            <h4>Softly</h4>
+            <p>Clairo</p>
+          </div>
+        </div>
+
+
+        <div class="review-text">
+          Uma música tranquila e nostálgica, parece que tô ouvindo isso com um gatinho no colo numa tarde chuvosa.
+        </div>
+
+
+        <div class="review-actions">
+          <button class="action-btn">Curtir</button>
+          <button class="action-btn">Responder</button>
+        </div>
+      </div>
+
+<div class="review-item">
+  <div class="review-header">
+    <div class="user-info">
+      <div class="user-avatar small"><img src="logocat.png"></div>
+      <div>
+        <span class="username">Lucas Vinyl </span>
+        <span class="review-date"> há 1 dia</span>
+      </div>
+    </div>
+    <div class="review-rating">
+      <span class="stars">★★★★★</span>
+    </div>
+  </div>
+
+  <div class="music-info">
+    <img src="mscvalentine.png" alt="Capa">
+    <div>
+      <h4>When You Sleep</h4>
+      <p>My Bloody Valentine</p>
+    </div>
+  </div>
+
+  <div class="review-text">
+    Shoegaze puro, parece que tô flutuando. Perfeita pra ouvir deitado olhando o teto com fones bons. ❤️
+  </div>
+
+  <div class="review-actions">
+    <button class="action-btn">Curtir</button>
+    <button class="action-btn">Responder</button>
+  </div>
+</div>
+
+<div class="review-item">
+  <div class="review-header">
+    <div class="user-info">
+      <div class="user-avatar small"><img src="logocat.png"></div>
+      <div>
+        <span class="username">Marina Indie </span>
+        <span class="review-date"> há 3 dias</span>
+      </div>
+    </div>
+    <div class="review-rating">
+      <span class="stars">★★★★☆</span>
+    </div>
+  </div>
+
+  <div class="music-info">
+    <img src="mscterno.png" alt="Capa">
+    <div>
+      <h4>Volta</h4>
+      <p>Terno Rei</p>
+    </div>
+  </div>
+
+  <div class="review-text">
+    Letras poéticas e vibe melancólica. Me pegou num momento sensível e me abraçou. Terno Rei nunca erra.
+  </div>
+
+  <div class="review-actions">
+    <button class="action-btn">Curtir</button>
+    <button class="action-btn">Responder</button>
+  </div>
+</div>
+
+<div class="review-item">
+  <div class="review-header">
+    <div class="user-info">
+      <div class="user-avatar small"><img src="logocat.png"></div>
+      <div>
+        <span class="username">João 808 </span>
+        <span class="review-date"> há 5 dias</span>
+      </div>
+    </div>
+    <div class="review-rating">
+      <span class="stars">★★★☆☆</span>
+    </div>
+  </div>
+
+  <div class="music-info">
+    <img src="mscpeep.png" alt="Capa">
+    <div>
+      <h4>Ghost Boy</h4>
+      <p>Lil Peep</p>
+    </div>
+  </div>
+
+  <div class="review-text">
+    Curti o beat e a vibe triste, mas acho que escutei numa hora errada kkkk. Vou dar outra chance depois.
+  </div>
+
+  <div class="review-actions">
+    <button class="action-btn">Curtir</button>
+    <button class="action-btn">Responder</button>
+  </div>
+</div>
+
+      <!-- Tu pode repetir o bloco acima para mais comentários -->
+    </div>
+  </main>
+
+
+  <footer>
+    <p>© 2025 Miausicbox. Todos os direitos reservados.</p>
+  </footer>
+</div>
+
+
+
+

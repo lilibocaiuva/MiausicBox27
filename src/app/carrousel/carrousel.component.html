@@ -1,0 +1,19 @@
+<div class="carrousel-container">
+  <div class="carrousel-track" [style.transform]="getSlideTransform()">
+    <div class="carrousel-item" *ngFor="let item of carrouselItems">
+      <div class="card" [style.backgroundColor]="item.backgroundColor">
+        <img [src]="item.imageUrl" [alt]="item.title" />
+        <div class="card-content">
+          <h2>{{ item.title }}</h2>
+          <h3>{{ item.subtitle }}</h3>
+          <p>{{ item.description }}</p>
+          <button>{{ item.buttonText }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <button (click)="prevSlide()">◀</button>
+    <button (click)="nextSlide()">▶</button>
+  </div>
+</div>

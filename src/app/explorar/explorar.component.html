@@ -1,0 +1,115 @@
+<div class="app">
+  <!-- HEADER herdado da home -->
+  <header>
+    <div class="header_content">
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+        </svg>
+        Miausicbox
+      </div>
+      <nav>
+        <ul class="navegacion">
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/explorar" routerLinkActive="active">Explorar</a></li>
+          <li><a routerLink="/dashboard" routerLinkActive="active">Descobrir</a></li>
+          <li><a routerLink="/login" routerLinkActive="active">Perfil</a></li>
+        </ul>
+      </nav>
+      <div class="user-section">
+        <span class="user-name">Olá, usuário</span>
+        <div class="user-avatar"><img src="logocat.png" /></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="main-title">Miausicbox</h1>
+      <p class="subtitle">Descubra as melhores playlists para cada momento e estilo</p>
+    </header>
+
+    <div class="playlist-grid">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1EQqkOPvHGajmW?si=JdFCpfFkRrugGqMyFzM8MQ" class="playlist-card" (click)="openSpotify('indie')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Indie Vibes</h3>
+        <p class="playlist-description">Sons alternativos e indie para relaxar e se inspirar.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Indie</span>
+          <span>50 músicas</span>
+        </div>
+      </a>
+
+      <a href="https://open.spotify.com/playlist/6uJ3iSP8QH7zIdGAiJDaaL?si=1ySd1TprQjqsw9hKUShoLQ" class="playlist-card" (click)="openSpotify('pop')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Pop Hits</h3>
+        <p class="playlist-description">Os maiores sucessos do pop atual. Energia e melodias grudentas.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Pop</span>
+          <span>38 músicas</span>
+        </div>
+      </a>
+
+      <a href="https://open.spotify.com/playlist/3vfuvrPYLGuho9OHMmwCyA?si=R88ZOXBvQGeaSpRIkuVLCw" class="playlist-card" (click)="openSpotify('chill')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Chill Sunset</h3>
+        <p class="playlist-description">Músicas suaves para relaxar no final do dia.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Chill</span>
+          <span>35 músicas</span>
+        </div>
+      </a>
+
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U?si=pb7xFHbqS5y2TnQtE6N_WA" class="playlist-card" (click)="openSpotify('rock')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Rock Classics</h3>
+        <p class="playlist-description">Os clássicos do rock que nunca saem de moda.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Rock</span>
+          <span>45 músicas</span>
+        </div>
+      </a>
+
+      <a href="https://open.spotify.com/playlist/1gzrM0h3VuGRwzomvK23LR?si=iG0WibeVTEKF-iIb3jikFg" class="playlist-card" (click)="openSpotify('electronic')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Electronic Flow</h3>
+        <p class="playlist-description">Batidas eletrônicas e sintetizadores pra energizar.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Electronic</span>
+          <span>40 músicas</span>
+        </div>
+      </a>
+
+      <a href="https://open.spotify.com/intl-pt/album/6hrb42dc20hXIwmoKPR2PE?si=JD3g7CaHTNithsuJ73piGw" class="playlist-card" (click)="openSpotify('acoustic')">
+        <div class="playlist-icon"></div>
+        <h3 class="playlist-title">Acoustic Sessions</h3>
+        <p class="playlist-description">Versões acústicas para momentos íntimos.</p>
+        <div class="playlist-meta">
+          <span class="genre-tag">Acoustic</span>
+          <span>32 músicas</span>
+        </div>
+      </a>
+    </div>
+
+    <section class="featured-section">
+      <h2 class="featured-title">Música para Cada Momento</h2>
+      <p class="featured-text">
+        Cada playlist foi cuidadosamente curada para criar a atmosfera perfeita.
+      </p>
+      <a href="https://open.spotify.com/" class="spotify-button" target="_blank">
+        <span>♫</span>
+        Abrir Spotify
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Miausicbox. Todos os direitos reservados.</p>
+  </footer>
+</div>

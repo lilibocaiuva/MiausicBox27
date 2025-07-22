@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="cadastro.component.css">
+<form (ngSubmit)="signUp()" #cadastroForm="ngForm">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input [(ngModel)]="nome" name="nome" type="text" required placeholder="Digite seu nome">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input [(ngModel)]="email" name="email" type="email" required placeholder="exemplo@email.com">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Senha</label>
+    <input [(ngModel)]="password" name="password" type="password" required placeholder="Crie uma senha segura">
+  </div>
+
+  <button type="submit" class="btn-cadastro">Cadastrar</button>
+</form>
