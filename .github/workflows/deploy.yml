@@ -1,4 +1,4 @@
-name: Deploy Angular to GitHub Pages
+name: Deploy Angular (SSR browser) to GitHub Pages
 
 on:
   push:
@@ -24,12 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Angular
-        run: npx ng build MiausicBox27 --configuration production --base-href /MiausicBox27/
+      - name: Build Angular (browser only)
+        run: npx ng build miausicbox --configuration production --base-href /MiausicBox27/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist/miausicbox/browser
+rets.GITHUB_TOKEN }}
           publish_dir: dist/MiausicBox27
 
